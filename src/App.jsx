@@ -179,6 +179,43 @@ const App = () => {
             <a href="tel:9948007396" style={phoneNumberStyle}>
               9948007396
             </a>
+            {/* WhatsApp field */}
+            <a
+              href="https://wa.me/919948007396"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginTop: 8,
+                textDecoration: "none",
+                color: "#25D366",
+                fontWeight: 700,
+                fontSize: "1.08rem",
+                background: "rgba(37,211,102,0.08)",
+                borderRadius: 8,
+                padding: "6px 12px",
+                width: "fit-content",
+                boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
+                transition: "background 0.2s",
+              }}
+            >
+              <svg
+                style={{ marginRight: 7 }}
+                width="20"
+                height="20"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="16" cy="16" r="16" fill="#25D366" />
+                <path
+                  d="M23.472 19.339c-.355-.178-2.104-1.037-2.43-1.156-.326-.119-.563-.178-.8.178-.237.355-.914 1.156-1.122 1.393-.208.237-.415.267-.77.089-.355-.178-1.5-.553-2.86-1.763-1.057-.944-1.77-2.108-1.98-2.463-.208-.356-.022-.547.156-.724.16-.159.355-.415.533-.622.178-.208.237-.356.355-.593.119-.237.06-.445-.03-.623-.089-.178-.8-1.926-1.096-2.637-.288-.692-.582-.597-.8-.608-.208-.009-.445-.011-.683-.011-.237 0-.623.089-.95.445-.326.356-1.25 1.221-1.25 2.977 0 1.756 1.28 3.453 1.457 3.692.178.237 2.522 3.857 6.11 5.254.855.295 1.52.471 2.04.601.857.205 1.637.176 2.253.107.687-.077 2.104-.859 2.403-1.691.297-.832.297-1.545.208-1.691-.089-.148-.326-.237-.68-.415z"
+                  fill="#fff"
+                />
+              </svg>
+              WhatsApp
+            </a>
           </div>
         </div>
         {/* Signature and location below contact card */}
