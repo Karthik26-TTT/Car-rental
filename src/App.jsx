@@ -136,7 +136,7 @@ const App = () => {
     <div style={appBg}>
       <div style={cardStyle}>
         <div style={{ width: "100%" }}>
-          <div style={subtitleStyle}>Rental CARZZ..</div>
+          <div style={subtitleStyle}>Rental CARZZ.</div>
           <div style={gradientText}>Budget Friendly Cars Hyderabad</div>
         </div>
         <div style={{ width: "100%", marginTop: 18 }}>
