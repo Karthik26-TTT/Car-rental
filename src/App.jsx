@@ -136,7 +136,7 @@ const App = () => {
     <div style={appBg}>
       <div style={cardStyle}>
         <div style={{ width: "100%" }}>
-          <div style={subtitleStyle}>Rental CARZZ.</div>
+          <div style={subtitleStyle}>Rental CARZZ..</div>
           <div style={gradientText}>Budget Friendly Cars Hyderabad</div>
         </div>
         <div style={{ width: "100%", marginTop: 18 }}>
@@ -181,7 +181,7 @@ const App = () => {
             </a>
             {/* WhatsApp field */}
             <a
-              href="https://wa.me/919948007396"
+              href="https://wa.me/919948007396?text=I%20want%20to%20Book%20a%20ride%20%3F"
               target="_blank"
               rel="noopener noreferrer"
               style={{
