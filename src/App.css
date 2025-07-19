@@ -1,0 +1,462 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+  padding: 20px;
+}
+
+.advertisement-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Background decorative circles */
+.bg-circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.1);
+  border: 2px solid rgba(59, 130, 246, 0.2);
+}
+
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  right: -50px;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  top: 50px;
+  right: 100px;
+}
+
+.circle-3 {
+  width: 100px;
+  height: 100px;
+  bottom: 50px;
+  right: 200px;
+}
+
+/* Dotted patterns in corners */
+.dotted-pattern {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(circle, white 2px, transparent 2px);
+  background-size: 10px 10px;
+  opacity: 0.3;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Main content wrapper */
+.content-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+/* Left side - Text content */
+.text-content {
+  flex: 1;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Service name section */
+.service-name {
+  margin-bottom: 40px;
+}
+
+.toy-rides {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #fbbf24;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+
+/* Services section */
+.services-section {
+  margin-bottom: 40px;
+}
+
+.services-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.services-list {
+  list-style: none;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.bullet {
+  color: #fbbf24;
+  font-size: 1rem;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Contact section */
+.contact-section {
+  margin-top: auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  background: #fbbf24;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+}
+
+.phone-icon {
+  background: #3b82f6;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.phone-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-label {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.phone-number {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #111827;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.phone-number:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* Right side - Car section */
+.car-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px;
+}
+
+.car-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-image {
+  position: relative;
+  z-index: 20;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.car-image svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.lamborghini-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.lamborghini-img:hover {
+  transform: scale(1.02);
+}
+
+/* Motion blur effects */
+.motion-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.blur-element {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  height: 2px;
+  border-radius: 50%;
+  animation: blurMove 3s infinite linear;
+}
+
+.blur-1 {
+  top: 30%;
+  width: 200px;
+  animation-delay: 0s;
+}
+
+.blur-2 {
+  top: 50%;
+  width: 150px;
+  animation-delay: 1s;
+}
+
+.blur-3 {
+  top: 70%;
+  width: 180px;
+  animation-delay: 2s;
+}
+
+@keyframes blurMove {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Desktop only elements */
+.desktop-only {
+  display: block;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .advertisement-container {
+    height: 500px;
+  }
+  
+  .main-title {
+    font-size: 2.8rem;
+  }
+  
+  .toy-rides {
+    font-size: 2rem;
+  }
+  
+  .text-content {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .advertisement-container {
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .advertisement-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/lamborgini.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: 1;
+  }
+  
+  .content-wrapper {
+    position: relative;
+    z-index: 10;
+    background: rgba(30, 58, 138, 0.8);
+    backdrop-filter: blur(8px);
+    min-height: 100vh;
+  }
+  
+  .text-content {
+    padding: 40px 25px;
+    background: rgba(30, 58, 138, 0.85);
+    border-radius: 20px;
+    margin: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .main-title {
+    font-size: 2.2rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+  }
+  
+  .toy-rides {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+  
+  .services-title {
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+  
+  .service-item {
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  }
+  
+  .contact-card {
+    background: rgba(251, 191, 36, 0.95);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .bg-circles {
+    display: none;
+  }
+  
+  .dotted-pattern {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .advertisement-container {
+    border-radius: 15px;
+  }
+  
+  .text-content {
+    padding: 25px 15px;
+  }
+  
+  .main-title {
+    font-size: 1.8rem;
+  }
+  
+  .toy-rides {
+    font-size: 1.5rem;
+  }
+  
+  .contact-card {
+    padding: 15px 20px;
+  }
+  
+  .phone-number {
+    font-size: 1.1rem;
+  }
+}
