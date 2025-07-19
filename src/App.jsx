@@ -181,6 +181,57 @@ const App = () => {
             </a>
           </div>
         </div>
+        {/* Signature and location below contact card */}
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: 16,
+          }}
+        >
+          <div
+            style={{
+              fontFamily: "Pacifico, Brush Script MT, cursive, sans-serif",
+              fontSize: "1.1rem",
+              color: "#fbbf24",
+              letterSpacing: 1.5,
+              textShadow: "1px 1px 6px rgba(0,0,0,0.18)",
+              marginBottom: 6,
+            }}
+          >
+            - Akshay
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "1.1rem",
+              color: "#fff",
+              fontWeight: 500,
+              letterSpacing: 1,
+              textShadow: "1px 1px 6px rgba(0,0,0,0.18)",
+            }}
+          >
+            <svg
+              style={{ marginRight: 6 }}
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2C6.686 2 4 4.686 4 8c0 4.418 5.25 9.54 5.472 9.76a1 1 0 0 0 1.416 0C10.75 17.54 16 12.418 16 8c0-3.314-2.686-6-6-6zm0 13.674C8.14 13.07 6 10.486 6 8a4 4 0 1 1 8 0c0 2.486-2.14 5.07-4 7.674z"
+                fill="#fbbf24"
+              />
+              <circle cx="10" cy="8" r="2" fill="#1e40af" />
+            </svg>
+            Nizampet, Bachupally
+          </div>
+        </div>
       </div>
     </div>
   );
